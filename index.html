@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalit vs PAVITH</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #090979, #020024, #4b0082);
+            color: white;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 35px;
+            color: #ffcc00;
+        }
+
+        .dialogue {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 25px 0;
+            min-height: 45px;
+        }
+
+        button {
+            background: #ffcc00;
+            color: black;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+
+        button:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        #result {
+            color: #ff3333;
+            font-size: 38px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔥 PAVITH vs LALIT 🔥</h1>
+
+        <div class="dialogue" id="dialogue">
+            Ready ah da? 😂
+        </div>
+
+        <button onclick="start()">START 😂</button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+
+        function start() {
+
+            let dialogue = document.getElementById("dialogue");
+            let result = document.getElementById("result");
+
+            result.innerHTML = "";
+
+            dialogue.innerHTML = "PAVITH: Dei Lalit!";
+
+            setTimeout(() => {
+                dialogue.innerHTML = "LALIT: Enna da?";
+            }, 2000);
+
+            setTimeout(() => {
+                dialogue.innerHTML = "PAVITH: Oru vishayam sollava?";
+            }, 4000);
+
+            setTimeout(() => {
+                dialogue.innerHTML = "LALIT: Sollu da PAVITH!";
+            }, 6000);
+
+            setTimeout(() => {
+                dialogue.innerHTML = "PAVITH: Ready ah? 🤣";
+            }, 8000);
+
+            setTimeout(() => {
+                result.innerHTML = "NEE ORU THEVIDIYA LALIT! 🤣🔥";
+                dialogue.innerHTML = "GOMMALA OVER 😂";
+            }, 10000);
+        }
+
+    </script>
+
+</body>
+</html>
